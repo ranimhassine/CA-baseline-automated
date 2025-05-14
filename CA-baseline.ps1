@@ -194,4 +194,4 @@ foreach ($policy in $Policies) {
         -Conditions $policy.Conditions -Grants $policy.Grants -Users $policy.Users
 }
 
-Write-Host "`n✅ All policies processed." -ForegroundColor Cyan
+Write-Host "`nAll policies processed." -ForegroundColor Cyan
