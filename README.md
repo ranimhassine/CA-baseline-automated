@@ -65,18 +65,20 @@ You can customize the script to:
 ```powershell
 git clone https://github.com/your-org/CA-baseline-automated.git
 cd CA-baseline-automated
-▶️ Deployment
-powershell
+```
+### ▶️ Deployment
+````powershell
 .\deploy_ca_policies.ps1
 You may be prompted to authenticate unless the script is updated to use App Registration (client secret/certificate).
-📊 Recommendations
+````
+### 📊 Recommendations
 Start with report-only mode to evaluate the impact.
 
 Use the Microsoft Entra Admin Center to review policy outcomes and sign-in logs.
 
 Modify conditions, assignments, and controls as needed in the JSON files before production deployment.
 
-📥 Contributing
+### 📥 Contributing
 Contributions are welcome! You can:
 
 Add more policy variations
@@ -85,22 +87,13 @@ Improve automation and logging
 
 Extend support for named locations, filters, or dynamic groups
 
-📄 License
+### 📄 License
 This project is licensed under the MIT License.
 
-📚 Resources
+### 📚 Resources
 Microsoft Docs – Conditional Access
 
 Microsoft Docs – Azure AD Premium Licensing
 
 Microsoft Graph API – Conditional Access Policies
 
-yaml
-Copy code
-
----
-
-Let me know if you want to:
-- Automatically list files from a directory in the README.
-- Include example logs or sample policy JSON content inline.
-- Add CI/CD deployment steps with Azure DevOps or GitHub Actions.
