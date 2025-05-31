@@ -1,0 +1,29 @@
+{
+  "displayName": "CA001 - Block Legacy Authentication (Exclude Global Admins)",
+  "state": "enabled",
+  "conditions": {
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeRoles": [
+        "62e90394-69f5-4237-9190-012177145e10"
+      ]
+    },
+    "clientAppTypes": [
+      "exchangeActiveSync",
+      "other"
+    ],
+    "applications": {
+      "includeApplications": [
+        "All"
+      ]
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ]
+  }
+}

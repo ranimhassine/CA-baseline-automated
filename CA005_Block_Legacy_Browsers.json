@@ -1,0 +1,28 @@
+{
+  "displayName": "CA005 - Block Legacy Browsers (Exclude Global Admins)",
+  "state": "enabled",
+  "conditions": {
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeRoles": [
+        "62e90394-69f5-4237-9190-012177145e10"
+      ]
+    },
+    "clientAppTypes": [
+      "other"
+    ],
+    "applications": {
+      "includeApplications": [
+        "All"
+      ]
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ]
+  }
+}
